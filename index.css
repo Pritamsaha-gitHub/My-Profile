@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+  background-color: rgba(0, 0, 0, 0.01);
+  width: 45%;
+  height: 100vh;
+  margin-left: 30%;
+}
+
+
+.item1{
+    background-color:rgb(24,100,56);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+}
+.img{
+    padding: 15px;
+    padding-bottom: 10px;
+    height: 60px;
+    width: 50px;
+    border-radius: 100%;
+}
+.nam{
+    font-size: 30px;
+    color: white;
+}
+.seen{
+    color: rgb(89,137,142);
+}
+.message{
+    color: white;
+    font-size: 20px;
+}
+.hitext{
+    color: rgb(214,164,32);
+}
+.hitext:hover{
+    color: green;
+}
+.item2{
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png'); 
+    overflow: scroll;
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    padding: 10px 15px;
+}
+.item2::-webkit-scrollbar {
+    display: none;
+  }
+.txtbox{
+    width: 530px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(42,57,66);
+    color: white;
+    margin-left: 35px;
+    padding-left: 20px;
+}
+.btn{
+    position: relative;
+    top: 15px;
+    margin-left: 25px;
+}
+.item3{
+    background-color: rgb(9,27,12);
+    padding-bottom: 15px;
+}
+.mymessage{
+    background-color: rgb(15,58,50);
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    margin: 5px;
+    padding: 10px;
+    width: fit-content;
+    align-self: flex-end;    
+    display: flex;
+    flex-direction: column;
+}
+.myrep{
+    color: white;
+    font-size: 20px;
+}
+.myr{
+    color: rgb(89,137,142);
+    font-size: 12px;
+    align-self: flex-end;
+}
+.nev{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mess{
+    color: white;
+    font-size: 20px;
+}
+.ti{
+    align-self: flex-end;
+    color: rgb(89,137,142);
+font-size: 12px;
+}
+.total{
+    background-color: rgb(32,44,51);
+  
+    border-radius: 10px;
+    margin: 5px;
+    width: 350px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.down{
+     background-color: rgb(32,44,51);
+  
+    border-radius: 10px;
+    margin: 2px;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.ctag{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.first{
+    padding: 10px 20px;
+
+}
+.second{
+    padding: 10px 15px;
+    display: none;
+}
+.ctag:hover{
+    background-color: green;
+    color: white;
+}
+.ctag:hover .first{
+    display: none;
+}
+.ctag:hover .second{
+    display:block;
+}
+@media screen and (max-width: 480px) {
+  .grid-container{
+    margin-left: 0;
+    width: 100%;
+  }
+  .txtbox{
+    width: 290px;
+    height: 40px;
+    margin-left: 20px;
+}
+.btn{
+    margin-left: 10px;
+}
+  
+}
