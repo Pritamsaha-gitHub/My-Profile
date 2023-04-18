@@ -61,7 +61,7 @@
     display: none;
   }
 .txtbox{
-    width: 530px;
+    width: 480px;
     height: 40px;
     border-radius: 10px;
     background-color: rgb(42,57,66);
@@ -125,7 +125,7 @@ font-size: 12px;
 .down{
     border-radius: 10px;
     /* text-decoration: none; */
-    /* background-color: rgb(194, 31, 222); */
+    /* background-color: rgb(255, 255, 255); */
     margin: 2px;
     width: fit-content;
     padding: 10px;
@@ -169,12 +169,15 @@ font-size: 12px;
     width: 100%;
   }
   .txtbox{
-    width: 290px;
+    width: 250px;
     height: 40px;
     margin-left: 20px;
 }
 .btn{
     margin-left: 10px;
+}
+.item2{
+    padding: 0;
 }
   
 }
