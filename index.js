@@ -21,6 +21,7 @@ let himessage=`<div class="message">
 Send Keyword to get what you want to know about me... <br />
 e.g <br />
 <span class="hitext">'skills'</span> - to know my skills <br />
+<span class="hitext">'experience'</span> - to know my experiences <br />
 <span class="hitext">'resume'</span> - to get my resume <br />
 <span class="hitext">'education'</span> - to get my education details
 <br />
@@ -35,11 +36,14 @@ e.g <br />
 let skillsmessage=`<div class="message">
 I have learn fullStack devlopment From AccioJob <br /><br />
 I can comfortably write code in following languages : <br />
-<span class="hitext">Java</span><br />
-<span class="hitext">JavaScript</span><br />
-<span class="hitext">CSS</span><br />
-<span class="hitext">HTML</span><br />
-<span class="hitext">SQL</span><br /><br />
+<span class="hitext">Core Java & Spring Boot</span><br />
+<span class="hitext">Data Structures & Algorithms</span><br />
+<span class="hitext">JPA & Hibernate</span><br />
+<span class="hitext">PostgreSQL, MongoDB, MySQL</span><br />
+<span class="hitext">Docker, Kubernetes</span><br />
+<span class="hitext">HTML, CSS, JavaScript</span><br /><br />
+
+
 I've experiance with following frameworks :<span class="hitext"
   >Spring Boot</span
 >
@@ -65,6 +69,10 @@ let wronginput=`<div class="message">
 Hey I couldn't catch you...😢 <br />
 Send <span class="hitext">'hi'</span>
 to know more about usage.
+</div>`;
+let workexperienceMessage = `<div class="message">
+● I am currently working as Java Developer at <a href="https://www.linkedin.com/company/dgliger-consulting/about" target="_blank" class="hitext">DGLiger Consulting</a> from July 2024 to present,<br /><br />
+● I have worked as Software Engineer at <a href="https://www.linkedin.com/company/e-labs-lims" target="_blank" class="hitext">Quality and Testing Info Solutions Pvt. Ltd.</a> from January 2023 to July 2024.
 </div>`;
 
 function lastSeen(){
@@ -263,6 +271,13 @@ const chatevent=() => {
       let timeout=setTimeout(projects,1000);
     }else if(userinput==='clear'){
         location.reload();
+    }else if(userinput==='experience'){
+        function exprep  (){
+            item2.appendChild(repTime(workexperienceMessage));
+            item2.lastChild.scrollIntoView();
+            }
+            typing();
+            let timeout=setTimeout(exprep,1000);
     }else if(userinput==='about'){
         function aboutrep  (){
         item2.appendChild(repTime(aboutmessage));
